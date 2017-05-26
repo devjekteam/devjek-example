@@ -3,29 +3,34 @@ import { storiesOf, action } from '@kadira/storybook';
 import Sidebar from '../../src/containers/Sidebar';
 
 const defaultProps = {
-  navMenus: [
+  menus: [
     {
       title: 'Main',
       items: [
         {
           icon: require('../../src/public/img/left-menu/file.png'),
-          name: 'Files'
+          name: 'Files',
+          onSelect: action('Nav Item Selected')
         },
         {
           icon: require('../../src/public/img/left-menu/photo.png'),
-          name: 'Photos'
+          name: 'Photos',
+          onSelect: action('Nav Item Selected')
         },
         {
           icon: require('../../src/public/img/left-menu/sharing.png'),
-          name: 'Sharing'
+          name: 'Sharing',
+          onSelect: action('Nav Item Selected')
         },
         {
           icon: require('../../src/public/img/left-menu/link.png'),
-          name: 'Links'
+          name: 'Links',
+          onSelect: action('Nav Item Selected')
         },
         {
           icon: require('../../src/public/img/left-menu/event.png'),
-          name: 'Events'
+          name: 'Events',
+          onSelect: action('Nav Item Selected')
         }
       ]
     },
@@ -34,11 +39,13 @@ const defaultProps = {
       items: [
         {
           icon: require('../../src/public/img/left-menu/carousel.png'),
-          name: 'Carousel'
+          name: 'Carousel',
+          onSelect: action('Nav Item Selected')
         },
         {
           icon: require('../../src/public/img/left-menu/mailbox.png'),
-          name: 'Mailbox'
+          name: 'Mailbox',
+          onSelect: action('Nav Item Selected')
         },
       ]
     },
@@ -47,27 +54,36 @@ const defaultProps = {
       items: [
         {
           icon: require('../../src/public/img/left-menu/design.png'),
-          name: 'Design'
+          name: 'Design',
+          onSelect: action('Nav Item Selected')
         },
         {
           icon: require('../../src/public/img/left-menu/web-elements.png'),
-          name: 'Web Elements'
+          name: 'Web Elements',
+          onSelect: action('Nav Item Selected')
         },
         {
           icon: require('../../src/public/img/left-menu/mobile.png'),
-          name: 'Mobile'
+          name: 'Mobile',
+          onSelect: action('Nav Item Selected')
         },
         {
           icon: require('../../src/public/img/left-menu/application.png'),
-          name: 'Application'
+          name: 'Application',
+          onSelect: action('Nav Item Selected')
         },
         {
           icon: require('../../src/public/img/left-menu/uiux.png'),
-          name: 'UI/UX'
+          name: 'UI/UX',
+          onSelect: action('Nav Item Selected')
         }
       ]
     }
-  ]
+  ],
+  quota: {
+    used: 1.2,
+    available: 2
+  }
 };
 
 storiesOf('Sidebar', module)

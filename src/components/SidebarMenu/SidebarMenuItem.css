@@ -4,6 +4,9 @@
   margin-bottom: 28px;
   cursor: pointer;
 }
+.SidebarMenuItem:last-child {
+  margin: 0;
+}
 .SidebarMenuItem-icon {
   display: inline-block;
   line-height: 20px;
@@ -17,5 +20,5 @@
 .SidebarMenuItem-name {
   font-size: 14px;
   color: #8a8a8a;
-  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
 }

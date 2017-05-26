@@ -11,7 +11,7 @@ const SidebarMenu = (props) => {
       <h2 className="SidebarMenu-title">{props.title}</h2>
       <ul className="SidebarMenu-list">
         {
-          props.items.map(item => <SidebarMenuItem icon={item.icon} name={item.name} />)
+          props.items.map((item, i) => <SidebarMenuItem key={i} {...item} />)
         }
       </ul>
     </div>

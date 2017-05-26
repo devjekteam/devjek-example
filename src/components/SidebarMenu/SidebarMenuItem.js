@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './SidebarMenuItem.css';
 
 const SidebarMenuItem = (props) =>
-  <li className="SidebarMenuItem">
+  <li className="SidebarMenuItem" onClick={props.onSelect}>
     <span className="SidebarMenuItem-icon">
       <img src={props.icon} />
     </span>
@@ -12,8 +12,13 @@ const SidebarMenuItem = (props) =>
   </li>;
 
 SidebarMenuItem.propTypes = {
-  icon: PropTypes.string,
-  name: PropTypes.string
+  icon: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  onSelect: PropTypes.func
+};
+
+SidebarMenuItem.propTypes = {
+  onSelect: () => {}
 };
 
 export default SidebarMenuItem;

@@ -3,19 +3,22 @@ import PropTypes from 'prop-types';
 import './Sidebar.css';
 
 import SidebarMenu from '../../components/SidebarMenu';
+import StorageQuota from '../../components/StorageQuota';
 
 const Sidebar = (props) => {
   return (
     <div className="Sidebar">
       {
-        props.navMenus.map(menu => <SidebarMenu title={menu.title} items={menu.items} /> )
+        props.menus.map((menu, i) => <SidebarMenu key={i} {...menu} /> )
       }
+      <StorageQuota {...props.quota} />
     </div>
   );
 };
 
 Sidebar.propTypes = {
-  navMenus: PropTypes.arrayOf(PropTypes.object)
+  menus: PropTypes.arrayOf(PropTypes.object),
+  quota: PropTypes.object
 };
 
 export default Sidebar;
