@@ -9,15 +9,15 @@ import './NotificationIcon.css';
    * @param  {Object} props
    */
 const NotificationIcon = (props) => {
-  let notification;
+  let notificationAlert;
   if (props.notifications) {
-    notification = <div className="notification-active"/>
+    notificationAlert = <div className="notification-alert"/>
   }
 
   return (
     <div className="NotificationIcon" onClick={props.onSelect}>
       <img className="notification-icon-img" src={props.img} />
-      {notification}
+      {notificationAlert}
     </div>
   )
 }

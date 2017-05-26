@@ -6,7 +6,7 @@
   padding-left: 15px;
 }
 
-#search {
+.search {
   width: 80%;
   border: none;
   background-color: #505155;
@@ -16,7 +16,7 @@
   font-weight: 500;
 }
 
-#search:focus {
+.search:focus {
   outline: none;
 }
 
