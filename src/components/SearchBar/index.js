@@ -8,9 +8,8 @@ import './SearchBar.css';
    * @param  {Object} props
    */
 export default (props) => {
-  console.log(props);
   return (
-    <div className="search-bar">
+    <div className="SearchBar">
       <form className="search-form" onSubmit={props.onSubmit}>
         <input type="search" id="search" placeholder="Type to Search..."/>
         <input type="submit" className="icon" value=""></input>

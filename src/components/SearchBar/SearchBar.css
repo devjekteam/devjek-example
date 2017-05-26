@@ -1,0 +1,68 @@
+.SearchBar {
+  height: 100%;
+  background-color: #505155;
+  border-radius: 25px;
+  height: 40px;
+  padding-left: 15px;
+  margin-top: 20px;
+}
+
+#search {
+  width: 80%;
+  border: none;
+  background-color: #505155;
+  color: #f4f4f4;
+  height: 40px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+#search:focus {
+  outline: none;
+}
+
+.icon {
+  background:none;
+  border:none;
+  background-image: url("../../public/img/search-bar/search-icon.png");
+  background-repeat: no-repeat;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  float: right;
+  margin-top: 12px;
+  margin-right: 12px;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+/* Placeholder colors  */
+input[type="search"]::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #929292;
+    font-style: italic;
+    font-weight: 500;
+}
+input[type="search"]:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #929292;
+   opacity: 1;
+   font-style: italic;
+   font-weight: 500;
+}
+input[type="search"]::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #929292;
+   opacity: 1;
+   font-style: italic;
+   font-weight: 500;
+}
+input[type="search"]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #929292;
+   font-style: italic;
+   font-weight: 500;
+}
+input[type="search"]::-ms-input-placeholder { /* Microsoft Edge */
+   color: #929292;
+   font-style: italic;
+   font-weight: 500;
+}

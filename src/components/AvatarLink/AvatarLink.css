@@ -1,0 +1,39 @@
+.AvatarLink {
+  margin-top: 20px;
+  margin-right: 80px;
+  display: inline-block;
+}
+
+.AvatarLink:hover {
+  cursor: pointer;
+}
+
+.avatar-img {
+  vertical-align: middle;
+  display: inline-block;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.avatar-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h4, p {
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+h4 {
+  font-size: 13px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+p {
+  font-size: 11px;
+  color: #929292;
+  font-weight: 400;
+}

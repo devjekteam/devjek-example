@@ -1,10 +1,10 @@
-.site-head {
+.TopNav {
   background-color: #3f4044;
   height: 80px;
 }
 
 .logo {
-  width: 15%;
+  width: 220px;
   background-color: #007be8;
   float: left;
   height: 100%;
@@ -19,7 +19,11 @@
 }
 
 .site-search {
-  width: 18%;
+  width: 250px;
   margin-left: 20px;
   float: left;
+}
+
+.avatar-links {
+  float: right;
 }
