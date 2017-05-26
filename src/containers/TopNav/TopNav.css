@@ -1,0 +1,25 @@
+.site-head {
+  background-color: #3f4044;
+  height: 80px;
+}
+
+.logo {
+  width: 15%;
+  background-color: #007be8;
+  float: left;
+  height: 100%;
+}
+
+.logo img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: block;
+  height: 40px;
+}
+
+.site-search {
+  width: 18%;
+  margin-left: 20px;
+  float: left;
+}
