@@ -1,13 +1,14 @@
 .TopNav {
   background-color: #3f4044;
   height: 80px;
+  width: 1360px;
 }
 
 .logo {
-  width: 16%;
+  width: 220px;
   background-color: #007be8;
-  float: left;
   height: 100%;
+  display: inline-block;
 }
 
 .logo img {
@@ -19,20 +20,24 @@
 }
 
 .site-search {
-  width: 16%;
+  vertical-align: top;
+  width: 250px;
   margin-left: 20px;
-  float: left;
   margin-top: 20px;
+  display: inline-block;
+  margin-right: 280px;
 }
 
 .avatar-links {
+  vertical-align: top;
   margin-top: 20px;
-  float: right;
-  width: 45%;
+  width: 480px;
+  display: inline-block;
 }
 
 .settings {
+  vertical-align: top;
   margin-top: 30px;
-  float: right;
-  width: 7%;
+  width: 100px;
+  display: inline-block;
 }

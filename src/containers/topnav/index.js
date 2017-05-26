@@ -19,13 +19,13 @@ const TopNav = (props) => {
       <div className="site-search">
         <SearchBar {...props.topNav.search} />
       </div>
-      <div className="settings">
-        <NotificationIcon {...props.topNav.settings} />
-        <NotificationIcon {...props.topNav.notification} />
-      </div>
       <div className="avatar-links">
         <AvatarLink {...props.topNav.upgrade} />
         <AvatarLink {...props.topNav.profile} />
+      </div>
+      <div className="settings">
+        <NotificationIcon {...props.topNav.settings} />
+        <NotificationIcon {...props.topNav.notification} />
       </div>
     </header>
   )
