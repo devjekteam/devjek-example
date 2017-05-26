@@ -1,0 +1,19 @@
+.StorageQuota {
+  margin-top: 65px;
+  text-align: center;
+}
+.StorageQuota-prompt {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8a8a8a;
+  text-transform: uppercase;
+}
+.StorageQuota-quotaBar {
+  margin-top: 10px;
+  background: #d5d5d5;
+  height: 10px;
+}
+.StorageQuota-quotaBar-used {
+  background: #007be8;
+  height: 10px;
+}

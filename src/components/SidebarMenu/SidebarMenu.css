@@ -1,0 +1,17 @@
+.SidebarMenu {
+  margin-bottom: 50px;
+}
+
+.SidebarMenu-list {
+  list-style-type: none;
+  padding: 0 0 0 15px;
+  margin: 0;
+}
+
+.SidebarMenu-title {
+  font-size: 12px;
+  line-height: 18px;
+  color: #c1c1c1;
+  font-weight: 600;
+  margin: 0 0 20px;
+}
