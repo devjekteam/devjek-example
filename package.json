@@ -1,0 +1,35 @@
+{
+  "name": "devjek-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firstbirdlabs/devjek-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/firstbirdlabs/devjek-starter/issues"
+  },
+  "homepage": "https://github.com/firstbirdlabs/devjek-starter#readme",
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "@kadira/storybook": "^2.21.0",
+    "babel-jest": "^20.0.3",
+    "enzyme": "^2.8.2",
+    "jest": "^20.0.4",
+    "react-dom": "^15.5.4",
+    "react-test-renderer": "^15.5.4",
+    "regenerator-runtime": "^0.10.5"
+  }
+}
