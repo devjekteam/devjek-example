@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import './AvatarLink.css';
 
 /**
-   * Avartar Link Component
+   * Avatar Link Component
    * @param  {Object} props
    */
 const AvatarLink = (props) => {
@@ -27,7 +27,7 @@ AvatarLink.PropTypes = {
   onSelect: PropTypes.func
 };
 
-AvatarLink.PropTypes = {
+AvatarLink.defaultProps = {
   onSelect: () => {}
 };
 

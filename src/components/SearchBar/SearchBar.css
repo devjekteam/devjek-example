@@ -20,8 +20,8 @@
 }
 
 .icon {
-  background:none;
-  border:none;
+  background: none;
+  border: none;
   background-image: url("../../public/img/search-bar/search-icon.png");
   background-repeat: no-repeat;
   height: 15px;

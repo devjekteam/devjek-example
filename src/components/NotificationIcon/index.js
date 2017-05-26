@@ -28,7 +28,7 @@ NotificationIcon.PropTypes = {
   notifications: PropTypes.bool
 }
 
-NotificationIcon.PropTypes = {
+NotificationIcon.defaultProps = {
   onSelect: () => {}
 }
 

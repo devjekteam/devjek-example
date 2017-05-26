@@ -31,7 +31,7 @@ const TopNav = (props) => {
   )
 }
 
-TopNav.PropTypes = {
+TopNav.defaultProps = {
   topNav: PropTypes.object.isRequired
 }
 

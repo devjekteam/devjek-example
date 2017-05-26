@@ -23,7 +23,7 @@ SearchBar.PropTypes = {
   onSubmit: PropTypes.func
 }
 
-SearchBar.PropTypes = {
+SearchBar.defaultProps = {
   onSubmit: () => {}
 }
 
