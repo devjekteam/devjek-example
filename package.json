@@ -1,5 +1,5 @@
 {
-  "name": "devjek-starter",
+  "name": "devjek-example",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/firstbirdlabs/devjek-starter.git"
+    "url": "git+https://github.com/firstbirdlabs/devjek-example.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/firstbirdlabs/devjek-starter/issues"
+    "url": "https://github.com/firstbirdlabs/devjek-example/issues"
   },
-  "homepage": "https://github.com/firstbirdlabs/devjek-starter#readme",
+  "homepage": "https://github.com/firstbirdlabs/devjek-example#readme",
   "dependencies": {
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
