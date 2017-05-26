@@ -1,14 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // components
 import SearchBar from '../../components/SearchBar';
 import AvatarLink from '../../components/AvatarLink';
+import NotificationIcon from '../../components/NotificationIcon';
 
 // css
 import './TopNav.css';
 
-export default (props) => {
-  console.log(props);
+const TopNav = (props) => {
 
   return (
     <header className="TopNav">
@@ -18,6 +19,10 @@ export default (props) => {
       <div className="site-search">
         <SearchBar {...props.topNav.search} />
       </div>
+      <div className="settings">
+        <NotificationIcon {...props.topNav.settings} />
+        <NotificationIcon {...props.topNav.notification} />
+      </div>
       <div className="avatar-links">
         <AvatarLink {...props.topNav.upgrade} />
         <AvatarLink {...props.topNav.profile} />
@@ -25,3 +30,9 @@ export default (props) => {
     </header>
   )
 }
+
+TopNav.PropTypes = {
+  topNav: PropTypes.object.isRequired
+}
+
+export default TopNav;

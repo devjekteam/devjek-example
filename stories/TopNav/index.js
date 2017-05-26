@@ -10,20 +10,30 @@ const defaultProps = {
     },
     upgrade: {
       img: require('../../src/public/img/avatar-link/upgrade.png'),
-      onClick: action("Upgrade Avatar Link"),
+      onSelect: action("Upgrade Avatar Link"),
       title: "Upgrade account",
       subtext: "Pay 10$, Yearly"
     },
     profile: {
       img: require('../../src/public/img/avatar-link/profile.png'),
-      onClick: action("Profile Avatar Link"),
+      onSelect: action("Profile Avatar Link"),
       title: "Tim Van Damme",
       subtext: "Normal user"
+    },
+    settings: {
+      img: require('../../src/public/img/notification-icon/settings.png'),
+      onSelect: action("Settings"),
+      notifications: false
+    },
+    notification: {
+      img: require('../../src/public/img/notification-icon/notification.png'),
+      onSelect: action("Notifications"),
+      notifications: true
     }
   }
 }
 
-storiesOf('Button', module)
-    .add('with text', () => (
+storiesOf('TopNav', module)
+    .add('Full NavBar', () => (
         <TopNav {...defaultProps} />
     ));

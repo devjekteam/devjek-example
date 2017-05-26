@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // css
 import './SearchBar.css';
@@ -7,7 +8,7 @@ import './SearchBar.css';
    * Search Bar Component
    * @param  {Object} props
    */
-export default (props) => {
+const SearchBar = (props) => {
   return (
     <div className="SearchBar">
       <form className="search-form" onSubmit={props.onSubmit}>
@@ -16,4 +17,14 @@ export default (props) => {
       </form>
     </div>
   )
+};
+
+SearchBar.PropTypes = {
+  onSubmit: PropTypes.func
 }
+
+SearchBar.PropTypes = {
+  onSubmit: () => {}
+}
+
+export default SearchBar;

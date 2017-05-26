@@ -4,7 +4,7 @@
 }
 
 .logo {
-  width: 220px;
+  width: 16%;
   background-color: #007be8;
   float: left;
   height: 100%;
@@ -19,11 +19,20 @@
 }
 
 .site-search {
-  width: 250px;
+  width: 16%;
   margin-left: 20px;
   float: left;
+  margin-top: 20px;
 }
 
 .avatar-links {
+  margin-top: 20px;
   float: right;
+  width: 45%;
+}
+
+.settings {
+  margin-top: 30px;
+  float: right;
+  width: 7%;
 }
