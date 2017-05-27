@@ -27,7 +27,8 @@ const defaultProps = {
       name: 'web-design.jpg',
       image: require('../../src/public/files/web-design.jpg'),
       published: 'Feb 22',
-      size: '133KB'
+      size: '133KB',
+      selected: true
     },
     {
       name: 'sweet-pixels-icon.jpg',
@@ -63,7 +64,8 @@ const defaultProps = {
       name: 'iron-man-mask.jpg',
       image: require('../../src/public/files/iron-man-mask.jpg'),
       published: 'Feb 22',
-      size: '133KB'
+      size: '133KB',
+      selected: true
     },
     {
       name: 'magic-bacon-ride.jpg',

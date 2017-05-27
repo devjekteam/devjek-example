@@ -14,18 +14,20 @@ const TopNav = (props) => {
   return (
     <header className="TopNav">
       <div className="logo">
-        <img src={props.topNav.logo} />
+        <img src={props.logo} />
       </div>
       <div className="site-search">
-        <SearchBar {...props.topNav.search} />
+        <SearchBar {...props.search} />
       </div>
       <div className="avatar-links">
-        <AvatarLink {...props.topNav.upgrade} />
-        <AvatarLink {...props.topNav.profile} />
+        {
+          props.avatarLinks.map((item, i) => <AvatarLink key={i} {...item} /> )
+        }
       </div>
       <div className="settings">
-        <NotificationIcon {...props.topNav.settings} />
-        <NotificationIcon {...props.topNav.notification} />
+        {
+          props.notificationIcons.map((item, i) => <NotificationIcon key={i} {...item} /> )
+        }
       </div>
     </header>
   )

@@ -1,0 +1,27 @@
+.SubNav {
+  height: 60px;
+  background-color: #fff;
+  border-bottom: 1px solid #ededed;
+}
+
+.SubNav .MenuItem {
+  list-style: none;
+  display: inline-block;
+  margin: 20px 0px 20px 30px;
+}
+
+.SubNav .items-selected-text {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.SubNav .items-selected-text p {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.SubNav .sort-icons {
+  display: inline-block;
+  margin-left: 320px;
+}

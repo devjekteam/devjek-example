@@ -28,19 +28,19 @@ class ActionMenu extends Component {
           <span />
         </div>
         <ul className={this.state.open ? 'ActionMenu-menu' : 'ActionMenu-menu-hidden'}>
-          <li className="ActionMenu-menuItem" onClick={onShare}>
+          <li className="ActionMenu-menuItem onShare" onClick={onShare}>
             <span className="ActionMenu-menuItem-icon">
               <img src={require('../../public/files/share-icon.png')} />
             </span>
             Share
           </li>
-          <li className="ActionMenu-menuItem" onClick={onDownload}>
+          <li className="ActionMenu-menuItem onDownload" onClick={onDownload}>
             <span className="ActionMenu-menuItem-icon">
               <img src={require('../../public/files/download-icon.png')} />
             </span>
             Download as Zip
           </li>
-          <li className="ActionMenu-menuItem" onClick={onDelete}>
+          <li className="ActionMenu-menuItem onDelete" onClick={onDelete}>
             <span className="ActionMenu-menuItem-icon">
               <img src={require('../../public/files/delete-icon.png')} />
             </span>

@@ -4,37 +4,82 @@ import File from '../../src/components/File';
 import Grid from '../../src/containers/Grid';
 import TopNav from '../../src/containers/TopNav';
 import Sidebar from '../../src/containers/Sidebar';
+import SubNav from '../../src/containers/SubNav';
 
 const defaultProps = {
   topNav: {
-    topNav: {
-      logo: require('../../src/public/img/logo.png'),
-      search: {
-        onSubmit: action("Search Form Submitted")
-      },
-      upgrade: {
+    logo: require('../../src/public/img/logo.png'),
+    search: {
+      onSubmit: action("Search Form Submitted")
+    },
+    avatarLinks: [
+      {
         img: require('../../src/public/img/avatar-link/upgrade.png'),
         onSelect: action("Upgrade Avatar Link"),
         title: "Upgrade account",
         subtext: "Pay 10$, Yearly"
       },
-      profile: {
+      {
         img: require('../../src/public/img/avatar-link/profile.png'),
         onSelect: action("Profile Avatar Link"),
         title: "Tim Van Damme",
         subtext: "Normal user"
-      },
-      settings: {
+      }
+    ],
+    notificationIcons: [
+      {
         img: require('../../src/public/img/notification-icon/settings.png'),
         onSelect: action("Settings"),
         notifications: false
       },
-      notification: {
+      {
         img: require('../../src/public/img/notification-icon/notification.png'),
         onSelect: action("Notifications"),
         notifications: true
       }
-    }
+    ]
+  },
+  subnav: {
+    items: [
+      {
+        icon: require('../../src/public/img/sub-nav/upload.png'),
+        name: 'Upload',
+        onSelect: action('SubNav Upload Selected')
+      },
+      {
+        icon: require('../../src/public/img/sub-nav/folder.png'),
+        name: 'New Folder',
+        onSelect: action('SubNav New Folder Selected')
+      },
+      {
+        icon: require('../../src/public/img/sub-nav/share-folder.png'),
+        name: 'Share a Folder',
+        onSelect: action('SubNav Share a Folder Selected')
+      },
+      {
+        icon: require('../../src/public/img/sub-nav/trash.png'),
+        name: 'Trash',
+        onSelect: action('SubNav Trash Selected')
+      },
+    ],
+    itemsSelectedNumber: 2,
+    selectMenuIcons: [
+      {
+        icon: require('../../src/public/img/sub-nav/thumb-view.png'),
+        selected: true,
+        onSelect: action('Thumb View Selected')
+      },
+      {
+        icon: require('../../src/public/img/sub-nav/list-view.png'),
+        selected: false,
+        onSelect: action('List View Selected')
+      },
+      {
+        icon: require('../../src/public/img/sub-nav/detail-view.png'),
+        selected: false,
+        onSelect: action('Detail View Selected')
+      }
+    ]
   },
   sidebar: {
     menus: [
@@ -143,7 +188,8 @@ const defaultProps = {
         name: 'web-design.jpg',
         image: require('../../src/public/files/web-design.jpg'),
         published: 'Feb 22',
-        size: '133KB'
+        size: '133KB',
+        selected: true
       },
       {
         name: 'sweet-pixels-icon.jpg',
@@ -185,7 +231,8 @@ const defaultProps = {
         name: 'magic-bacon-ride.jpg',
         image: require('../../src/public/files/magic-bacon-ride.jpg'),
         published: 'Feb 22',
-        size: '133KB'
+        size: '133KB',
+        selected: true
       },
       {
         name: 'mobile-portfolio.jpg',
@@ -224,6 +271,7 @@ storiesOf('Full Page', module)
     <div>
       <TopNav {...defaultProps.topNav} />
       <Sidebar {...defaultProps.sidebar} />
+      <SubNav {...defaultProps.subnav} />
       <Grid>
         {defaultProps.grid.files.map((file, i) =>
           <File
@@ -231,6 +279,7 @@ storiesOf('Full Page', module)
             image={file.image}
             name={file.name}
             published={file.published}
+            selected={file.selected || false}
             onSelect={defaultProps.grid.onSelect}
             onDownload={defaultProps.grid.onDownload}
             onShare={defaultProps.grid.onShare}

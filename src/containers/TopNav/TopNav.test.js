@@ -4,29 +4,21 @@ import { mount } from 'enzyme';
 import TopNav from '../TopNav';
 
 const defaultProps = {
-  topNav: {
-    logo: '',
-    search: {
-    },
-    upgrade: {
+  logo: '',
+  search: {},
+  avatarLinks: [
+    {
       img: '',
       title: "Upgrade account",
       subtext: "Pay 10$, Yearly"
     },
-    profile: {
-      img: '',
-      title: "Tim Van Damme",
-      subtext: "Normal user"
-    },
-    settings: {
-      img: '',
-      notifications: false
-    },
-    notification: {
+  ],
+  notificationIcons: [
+    {
       img: '',
       notifications: true
     }
-  }
+  ]
 };
 
 
