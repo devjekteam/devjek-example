@@ -105,8 +105,9 @@ const defaultProps = {
 storiesOf('Grid', module)
   .add('default', () => (
     <Grid>
-      {defaultProps.files.map(file =>
+      {defaultProps.files.map((file, i) =>
         <File
+          key={i}
           image={file.image}
           name={file.name}
           published={file.published}

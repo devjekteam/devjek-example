@@ -225,8 +225,9 @@ storiesOf('Full Page', module)
       <TopNav {...defaultProps.topNav} />
       <Sidebar {...defaultProps.sidebar} />
       <Grid>
-        {defaultProps.grid.files.map(file =>
+        {defaultProps.grid.files.map((file, i) =>
           <File
+            key={i}
             image={file.image}
             name={file.name}
             published={file.published}
