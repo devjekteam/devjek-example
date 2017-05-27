@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import './SidebarMenu.css';
 
-import SidebarMenuItem from './SidebarMenuItem';
+import SidebarMenuItem from '../MenuItem';
 
 const SidebarMenu = (props) => {
   return (

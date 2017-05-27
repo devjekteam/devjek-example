@@ -1,23 +1,23 @@
-.SidebarMenuItem {
+.MenuItem {
   height: 20px;
   line-height: 20px;
   margin-bottom: 28px;
   cursor: pointer;
 }
-.SidebarMenuItem:last-child {
+.MenuItem:last-child {
   margin: 0;
 }
-.SidebarMenuItem-icon {
+.MenuItem-icon {
   display: inline-block;
   line-height: 20px;
   width: 30px;
   text-align: left;
 }
-.SidebarMenuItem-icon img {
+.MenuItem-icon img {
   max-width: 100%;
   vertical-align: middle;
 }
-.SidebarMenuItem-name {
+.MenuItem-name {
   font-size: 14px;
   color: #8a8a8a;
   font-weight: 500;
