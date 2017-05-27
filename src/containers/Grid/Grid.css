@@ -1,4 +1,5 @@
 .Grid {
   display: flex;
   flex-flow: row wrap;
+  padding: 30px;
 }
