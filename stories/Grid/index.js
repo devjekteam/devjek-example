@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
 import File from '../../src/components/File';
+import Grid from '../../src/containers/Grid';
 
 const defaultProps = {
   files: [
@@ -57,6 +58,42 @@ const defaultProps = {
       image: require('../../src/public/files/icon-set.jpg'),
       published: 'Feb 22',
       size: '133KB'
+    },
+    {
+      name: 'iron-man-mask.jpg',
+      image: require('../../src/public/files/iron-man-mask.jpg'),
+      published: 'Feb 22',
+      size: '133KB'
+    },
+    {
+      name: 'magic-bacon-ride.jpg',
+      image: require('../../src/public/files/magic-bacon-ride.jpg'),
+      published: 'Feb 22',
+      size: '133KB'
+    },
+    {
+      name: 'mobile-portfolio.jpg',
+      image: require('../../src/public/files/mobile-portfolio.jpg'),
+      published: 'Feb 22',
+      size: '133KB'
+    },
+    {
+      name: 'pin-art-dribbble.jpg',
+      image: require('../../src/public/files/pin-art-dribbble.jpg'),
+      published: 'Feb 22',
+      size: '133KB'
+    },
+    {
+      name: 'boxing-glove-icon.jpg',
+      image: require('../../src/public/files/boxing-glove-icon.jpg'),
+      published: 'Feb 22',
+      size: '133KB'
+    },
+    {
+      name: '0limp-006.jpg',
+      image: require('../../src/public/files/0limp-006.jpg'),
+      published: 'Feb 22',
+      size: '133KB'
     }
   ],
   onSelect: action('onSelect'),
@@ -67,7 +104,7 @@ const defaultProps = {
 
 storiesOf('Grid', module)
   .add('default', () => (
-    <div>
+    <Grid>
       {defaultProps.files.map(file =>
         <File
           image={file.image}
@@ -80,5 +117,5 @@ storiesOf('Grid', module)
           size={file.size}
         />
       )}
-    </div>
+    </Grid>
   ));

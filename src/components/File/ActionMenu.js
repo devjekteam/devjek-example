@@ -15,6 +15,11 @@ class ActionMenu extends Component {
   }
 
   render() {
+    const {
+      onShare,
+      onDownload,
+      onDelete
+    } = this.props;
     return (
       <div className={ this.state.open ? 'ActionMenu open' : 'ActionMenu' }>
         <div className="ActionMenu-dots" onClick={this.toggleMenu}>
@@ -23,19 +28,19 @@ class ActionMenu extends Component {
           <span />
         </div>
         <ul className={this.state.open ? 'ActionMenu-menu' : 'ActionMenu-menu-hidden'}>
-          <li className="ActionMenu-menuItem">
+          <li className="ActionMenu-menuItem" onClick={onShare}>
             <span className="ActionMenu-menuItem-icon">
               <img src={require('../../public/files/share-icon.png')} />
             </span>
             Share
           </li>
-          <li className="ActionMenu-menuItem">
+          <li className="ActionMenu-menuItem" onClick={onDownload}>
             <span className="ActionMenu-menuItem-icon">
               <img src={require('../../public/files/download-icon.png')} />
             </span>
             Download as Zip
           </li>
-          <li className="ActionMenu-menuItem">
+          <li className="ActionMenu-menuItem" onClick={onDelete}>
             <span className="ActionMenu-menuItem-icon">
               <img src={require('../../public/files/delete-icon.png')} />
             </span>

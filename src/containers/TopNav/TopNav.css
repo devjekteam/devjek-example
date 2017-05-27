@@ -1,0 +1,43 @@
+.TopNav {
+  background-color: #3f4044;
+  height: 80px;
+  width: 1360px;
+}
+
+.logo {
+  width: 220px;
+  background-color: #007be8;
+  height: 100%;
+  display: inline-block;
+}
+
+.logo img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: block;
+  height: 40px;
+}
+
+.site-search {
+  vertical-align: top;
+  width: 250px;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: inline-block;
+  margin-right: 280px;
+}
+
+.avatar-links {
+  vertical-align: top;
+  margin-top: 20px;
+  width: 480px;
+  display: inline-block;
+}
+
+.settings {
+  vertical-align: top;
+  margin-top: 30px;
+  width: 100px;
+  display: inline-block;
+}

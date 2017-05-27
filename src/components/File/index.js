@@ -8,9 +8,11 @@ import ActionMenu from './ActionMenu';
 const File = (props) => {
   return (
     <div className="File">
-      <img className="File-image" src={props.image} />
-      {props.selected && <span className="File-selected"><img src={require('../../public/files/selected-icon.png')} /></span>}
-      <span className="File-name">{props.name}</span>
+      <div onClick={props.onSelect}>
+        <img className="File-image" src={props.image} />
+        {props.selected && <span className="File-selected"><img src={require('../../public/files/selected-icon.png')} /></span>}
+        <span className="File-name">{props.name}</span>
+      </div>
       <div className="File-actionBar">
         <span className="File-actionBar-data">{props.published}, {props.size}</span>
         <ActionMenu onShare={props.onShare} onDownload={props.onDownload} onDelete={props.onDelete} />

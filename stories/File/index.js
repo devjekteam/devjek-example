@@ -1,5 +1,5 @@
 import React from 'react';
-import { storiesOf} from '@kadira/storybook';
+import { storiesOf, action } from '@kadira/storybook';
 import File from '../../src/components/File';
 
 const defaultProps = {
@@ -8,10 +8,10 @@ const defaultProps = {
   published: 'Jun 22',
   size: '122KB',
   selected: false,
-  onSelect: () => {},
-  onShare: () => {},
-  onDownload: () => {},
-  onDelete: () => {}
+  onSelect: action('onSelect'),
+  onShare: action('onShare'),
+  onDownload: action('onDownload'),
+  onDelete: action('onDelete')
 };
 
 storiesOf('File', module)
