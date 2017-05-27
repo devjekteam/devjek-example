@@ -18,8 +18,8 @@ describe('MenuItem', () => {
     expect(wrapper.find('.MenuItem-name').length).toBe(1);
   });
   it('should trigger onSelect when clicked', () => {
-    const sidebarItem = wrapper.find(MenuItem);
-    sidebarItem.simulate('click');
+    const menuItem = wrapper.find(MenuItem);
+    menuItem.simulate('click');
     expect(defaultProps.onSelect.calledOnce).toBe(true);
   });
 });
