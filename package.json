@@ -36,7 +36,7 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
+      "\\.(css|png|jpg)$": "<rootDir>/node_modules/jest-css-modules"
     }
   }
 }

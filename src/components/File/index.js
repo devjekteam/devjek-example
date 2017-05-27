@@ -8,7 +8,7 @@ import ActionMenu from './ActionMenu';
 const File = (props) => {
   return (
     <div className="File">
-      <div onClick={props.onSelect}>
+      <div className="File-body" onClick={props.onSelect}>
         <img className="File-image" src={props.image} />
         {props.selected && <span className="File-selected"><img src={require('../../public/files/selected-icon.png')} /></span>}
         <span className="File-name">{props.name}</span>
@@ -22,7 +22,7 @@ const File = (props) => {
 };
 
 File.propTypes = {
-  image: PropTypes.string.isRequired,
+  image: PropTypes.any.isRequired,
   name: PropTypes.string.isRequired,
   percentLoaded: PropTypes.number,
   published: PropTypes.string.isRequired,
@@ -31,7 +31,7 @@ File.propTypes = {
   onShare: PropTypes.func.isRequired,
   onDelete: PropTypes.func.isRequired,
   size: PropTypes.string.isRequired,
-  selected: PropTypes.bool
+  selected: PropTypes.bool,
 };
 
 File.defaultProps = {

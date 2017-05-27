@@ -96,6 +96,7 @@ const defaultProps = {
       size: '133KB'
     }
   ],
+  selectedIcon: require('../../src/public/files/selected-icon.png'),
   onSelect: action('onSelect'),
   onDelete: action('onDelete'),
   onDownload: action('onDownload'),
@@ -115,6 +116,7 @@ storiesOf('Grid', module)
           onShare={defaultProps.onShare}
           onDelete={defaultProps.onDelete}
           size={file.size}
+          selectedIcon={defaultProps.selectedIcon}
         />
       )}
     </Grid>
