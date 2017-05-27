@@ -1,0 +1,16 @@
+.SelectMenuIcon-icon img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.SelectMenuIcon-icon .selected {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.SelectMenuIcon {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+}

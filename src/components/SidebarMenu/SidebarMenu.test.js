@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 import sinon from 'sinon';
 
 import SidebarMenu from '../SidebarMenu';
-import SidebarMenuItem from '../SidebarMenu/SidebarMenuItem';
+import MenuItem from '../MenuItem';
 
 const defaultProps = {
   title: 'Test Menu',
@@ -26,6 +26,6 @@ describe('SidebarMenu', () => {
     expect(wrapper.find('h2.SidebarMenu-title').length).toBe(1);
   });
   it('should render the correct number of sidebar menu items', () => {
-    expect(wrapper.find(SidebarMenuItem).length).toBe(defaultProps.items.length);
+    expect(wrapper.find(MenuItem).length).toBe(defaultProps.items.length);
   });
 });
