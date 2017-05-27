@@ -27,7 +27,8 @@ const defaultProps = {
       name: 'web-design.jpg',
       image: require('../../src/public/files/web-design.jpg'),
       published: 'Feb 22',
-      size: '133KB'
+      size: '133KB',
+      selected: true
     },
     {
       name: 'sweet-pixels-icon.jpg',
@@ -63,7 +64,8 @@ const defaultProps = {
       name: 'iron-man-mask.jpg',
       image: require('../../src/public/files/iron-man-mask.jpg'),
       published: 'Feb 22',
-      size: '133KB'
+      size: '133KB',
+      selected: true
     },
     {
       name: 'magic-bacon-ride.jpg',
@@ -96,7 +98,6 @@ const defaultProps = {
       size: '133KB'
     }
   ],
-  selectedIcon: require('../../src/public/files/selected-icon.png'),
   onSelect: action('onSelect'),
   onDelete: action('onDelete'),
   onDownload: action('onDownload'),
@@ -106,8 +107,9 @@ const defaultProps = {
 storiesOf('Grid', module)
   .add('default', () => (
     <Grid>
-      {defaultProps.files.map(file =>
+      {defaultProps.files.map((file, i) =>
         <File
+          key={i}
           image={file.image}
           name={file.name}
           published={file.published}
@@ -116,7 +118,6 @@ storiesOf('Grid', module)
           onShare={defaultProps.onShare}
           onDelete={defaultProps.onDelete}
           size={file.size}
-          selectedIcon={defaultProps.selectedIcon}
         />
       )}
     </Grid>

@@ -31,7 +31,7 @@ File.propTypes = {
   onShare: PropTypes.func.isRequired,
   onDelete: PropTypes.func.isRequired,
   size: PropTypes.string.isRequired,
-  selected: PropTypes.bool,
+  selected: PropTypes.bool
 };
 
 File.defaultProps = {

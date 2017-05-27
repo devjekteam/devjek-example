@@ -1,5 +1,6 @@
 .Sidebar {
-  max-width: 220px;
+  width: 220px;
   background: #f4f4f4;
   padding: 35px 25px;
+  float: left;
 }
