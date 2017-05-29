@@ -1,7 +1,7 @@
 .MenuItem {
   height: 20px;
   line-height: 20px;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
   cursor: pointer;
 }
 .MenuItem:last-child {
