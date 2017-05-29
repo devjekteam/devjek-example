@@ -6,7 +6,6 @@ import './StorageQuota.css';
 /**
    * Storage Quota Component
    * shows how much storage has been used
-   * @param  {Object} props
 **/
 const StorageQuota = (props) => {
   const percentageUsed = ((props.used / props.available) * 100 ).toFixed(2);

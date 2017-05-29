@@ -6,7 +6,6 @@ import './SelectMenuIcon.css';
 /**
    * Select Menu Icon Component
    * icon that is greyed out if props.selected is false
-   * @param  {Object} props
 **/
 const SelectMenuIcon = (props) =>
   <li className="SelectMenuIcon" onClick={props.onSelect}>
