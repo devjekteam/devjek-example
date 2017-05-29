@@ -5,6 +5,10 @@ import './SidebarMenu.css';
 
 import SidebarMenuItem from '../MenuItem';
 
+/**
+   * Sidebar Menu Component
+   * vertical container that has a title and list of MenuItems
+**/
 const SidebarMenu = (props) => {
   return (
     <div className="SidebarMenu">

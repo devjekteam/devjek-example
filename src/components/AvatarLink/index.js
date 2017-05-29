@@ -6,8 +6,9 @@ import './AvatarLink.css';
 
 /**
    * Avatar Link Component
-   * @param  {Object} props
-   */
+   * link that triggers props.onSelect when clicked.
+   * contains an image, title and subtext.
+**/
 const AvatarLink = (props) => {
   return (
     <div className="AvatarLink" onClick={props.onSelect}>

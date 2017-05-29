@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 
 import './SelectMenuIcon.css';
 
+/**
+   * Select Menu Icon Component
+   * icon that is greyed out if props.selected is false
+**/
 const SelectMenuIcon = (props) =>
   <li className="SelectMenuIcon" onClick={props.onSelect}>
     <span className="SelectMenuIcon-icon">

@@ -6,7 +6,7 @@ import './NotificationIcon.css';
 
 /**
    * Notification Icon Component
-   * @param  {Object} props
+   * icon that has a blue dot in top right corner if props.notifications is true
    */
 const NotificationIcon = (props) => {
   let notificationAlert;

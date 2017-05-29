@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 
 import './StorageQuota.css';
 
+/**
+   * Storage Quota Component
+   * shows how much storage has been used
+**/
 const StorageQuota = (props) => {
   const percentageUsed = ((props.used / props.available) * 100 ).toFixed(2);
   return (
