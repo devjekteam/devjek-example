@@ -1,7 +1,7 @@
 .File {
   margin: 5px;
   padding: 10px;
-  width: 193px;
+  width: 213px;
   cursor: pointer;
   border-radius: 2px;
   position: relative;
@@ -15,12 +15,14 @@
   margin-top: -34px;
 }
 .File-image {
-  max-width: 100%;
+  width: 193px;
+  height: 162px;
 }
 .File-name {
   color: #505155;
   font-size: 14px;
   font-weight: 500;
+  line-height: 25px;
 }
 .File-actionBar {
   position: relative;
