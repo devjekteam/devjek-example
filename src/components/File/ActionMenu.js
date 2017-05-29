@@ -3,6 +3,11 @@ import PropTypes from 'prop-types';
 
 import './ActionMenu.css';
 
+/**
+   * Action Menu Component
+   * dropdown menu with links for Download, Share and Delete
+   * @param {Object} props
+**/
 class ActionMenu extends Component {
   constructor() {
     super();

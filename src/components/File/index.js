@@ -5,6 +5,11 @@ import './File.css';
 
 import ActionMenu from './ActionMenu';
 
+/**
+   * File Component
+   * selectable image with Action Menu
+   * @param  {Object} props
+**/
 const File = (props) => {
   return (
     <div className="File">

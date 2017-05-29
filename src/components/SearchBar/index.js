@@ -6,6 +6,7 @@ import './SearchBar.css';
 
 /**
    * Search Bar Component
+   * triggers props.onSubmit when submitted
    * @param  {Object} props
    */
 const SearchBar = (props) => {

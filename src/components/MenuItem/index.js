@@ -3,6 +3,11 @@ import PropTypes from 'prop-types';
 
 import './MenuItem.css';
 
+/**
+   * Menu Item Component
+   * icon and text link that triggers props.onSelect when clicked
+   * @param  {Object} props
+**/
 const MenuItem = (props) =>
   <li className="MenuItem" onClick={props.onSelect}>
     <span className="MenuItem-icon">
