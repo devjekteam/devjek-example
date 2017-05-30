@@ -1,8 +1,8 @@
 # devjek example
 
-Hello we are devjek! This is a repo to give you an example of what we can do for you. We chose to recreate a [web design](https://dribbble.com/shots/2144293-Redesign-Dropbox-Dashboard/attachments/392373) we found on Dribbble by [Muhammad Asad](https://dribbble.com/mrasad40) (with a few minor changes such as using a different logo so you don't get the wrong idea!). We took the .PSD and created the webpage built with React components. We have it hosted as a [Storybook](https://firstbirdlabs.github.io/devjek-example/) so you can check it out.
+Hello we are devjek! This is a repo to give you an example of what we can do for you. We chose to recreate a [web design](https://dribbble.com/shots/2144293-Redesign-Dropbox-Dashboard/attachments/392373) we found on Dribbble by [Muhammad Asad](https://dribbble.com/mrasad40). We took the .PSD file and created the webpage built with React components. We have it hosted as a [Storybook](https://devjekteam.github.io/devjek-example/) so you can check it out the components individually as well as play around with the full page.
 
-This purpose of this repo is to allow you to audit the code and see what you can expect to receive in return when you deliver design assets to us.
+The purpose of this repo is to allow you to audit the code and see what you can expect to receive in return when you deliver design assets to us.
 
 ### How devjek works
 
@@ -16,7 +16,7 @@ This purpose of this repo is to allow you to audit the code and see what you can
 
 ### See it all put together
 
-[Click Here](https://firstbirdlabs.github.io/devjek-example/) to check out all the components in action.
+[Click Here](https://devjekteam.github.io/devjek-example/) to check out all the components in action.
 
 Alternatively to host the storybook on your machine:
 
