@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/firstbirdlabs/devjek-example.git"
+    "url": "git+https://github.com/devjekteam/devjek-example.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/firstbirdlabs/devjek-example/issues"
+    "url": "https://github.com/devjekteam/devjek-example/issues"
   },
-  "homepage": "https://github.com/firstbirdlabs/devjek-example#readme",
+  "homepage": "https://github.com/devjekteam/devjek-example#readme",
   "dependencies": {
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
